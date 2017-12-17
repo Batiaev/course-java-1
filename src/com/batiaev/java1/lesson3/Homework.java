@@ -21,7 +21,7 @@ public class Homework {
         int playMore;//[0,1]
         do {
             int step = 0;
-            int random = (int) (Math.random() * 9);
+            int random = (int) (Math.random() * 10);
             System.out.print("Введите число от 0 до 9: ");
             int scan = sc.nextInt();
             while (scan != random && step < 3) {
