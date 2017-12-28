@@ -6,6 +6,7 @@ import java.io.Serializable;
 
 public class Cat extends Animal implements CanFly, Serializable {
 
+    private boolean isHungry = true;
     private int appetite;
 
     public Cat(int age, String name) {
@@ -17,7 +18,11 @@ public class Cat extends Animal implements CanFly, Serializable {
     }
 
     public void eat(Plate plate) {
-        plate.setFood(plate.getFood() - appetite);
+        isHungry = plate.decreaseFood(appetite);
+    }
+
+    public boolean isHungry() {
+        return isHungry;
     }
 
     @Override
@@ -55,6 +60,10 @@ public class Cat extends Animal implements CanFly, Serializable {
         } else {
             System.out.println(name + " не умеет плавать!");
         }
+    }
+
+    public void printInfo() {
+        System.out.println(name + (isHungry ? " is hungry" : " is not hungry"));
     }
 
     @Override

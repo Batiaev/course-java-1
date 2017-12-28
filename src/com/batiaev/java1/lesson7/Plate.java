@@ -20,4 +20,16 @@ public class Plate {
     public void setFood(int food) {
         this.food = food;
     }
+
+    public void addSomeFood(int food) {
+        this.food = this.food + food;
+    }
+
+    public boolean decreaseFood(int food) {
+        if (food <= this.food) {
+            this.food -= food;
+            return true;
+        }
+        return false;
+    }
 }
