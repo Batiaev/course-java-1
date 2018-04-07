@@ -1,5 +1,14 @@
 # Курс Java. Уровень 1
-https://geekbrains.ru/courses/48
+- Ссылка на курс - https://geekbrains.ru/courses/48
+### Поток 1 (2017-12-04)
+- Ссылка - https://geekbrains.ru/streams/2676
+- Исходники - [./stream1](./stream1)
+### Поток 2 (2018-01-22)
+- Ссылка - https://geekbrains.ru/streams/3442
+- Исходники - [./stream2](./stream2)
+### Поток 3 (2018-03-05)
+- Ссылка - https://geekbrains.ru/streams/3443
+- Исходники - [./stream3](./stream3)
 
 ## Занятия
 - __Урок 1. Java. Введение__
@@ -33,6 +42,9 @@ https://geekbrains.ru/courses/48
 - __Урок 8. Написание приложения с графическим интерфейсом__
 
 Основы работы с библиотекой Swing. Основное окно приложения, элементы управления и их компоновка. Написание приложения с графическим интерфейсом, сборка проекта.
+ 
+## Сборка приложения
+`mvn clean package`
  
 ## Преподаватель
 - [Anton Batiaev](https://geekbrains.ru/users/1851193)
